@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Edit_data"
+    android:background="#D8D0B7">
+
+    <TextView
+        android:id="@+id/editp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Data"
+        android:textSize="70dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/et_namsek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Sekolah"
+        android:layout_below="@+id/editp"/>
+
+    <EditText
+        android:id="@+id/et_alamsek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat Sekolah"
+        android:layout_below="@+id/et_namsek"/>
+
+    <EditText
+        android:id="@+id/et_jumsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah Siswa"
+        android:layout_below="@+id/et_alamsek"/>
+
+    <EditText
+        android:id="@+id/et_jumgur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah Guru"
+        android:layout_below="@id/et_jumsis"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/et_jumgur"/>
+
+</RelativeLayout>
